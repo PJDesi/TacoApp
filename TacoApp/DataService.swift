@@ -10,6 +10,7 @@ import Foundation
 
 protocol DataServiceDelegate: class {
     
+    // To be implemented in MainVC
     func deliciousTacoDataLoaded()
     
 }
