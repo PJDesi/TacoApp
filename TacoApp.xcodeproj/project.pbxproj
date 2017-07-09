@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		11F296871F12B2F900503027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296861F12B2F900503027 /* AppDelegate.swift */; };
-		11F296891F12B2F900503027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296881F12B2F900503027 /* ViewController.swift */; };
 		11F2968C1F12B2F900503027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F2968A1F12B2F900503027 /* Main.storyboard */; };
 		11F2968E1F12B2F900503027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2968D1F12B2F900503027 /* Assets.xcassets */; };
 		11F296911F12B2F900503027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F2968F1F12B2F900503027 /* LaunchScreen.storyboard */; };
 		11F2969C1F12B2FA00503027 /* TacoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2969B1F12B2FA00503027 /* TacoAppTests.swift */; };
+		11F296AD1F12B77D00503027 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296AC1F12B77D00503027 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		11F296831F12B2F900503027 /* TacoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F296861F12B2F900503027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11F296881F12B2F900503027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11F2968B1F12B2F900503027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11F2968D1F12B2F900503027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F296901F12B2F900503027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		11F296971F12B2FA00503027 /* TacoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F2969B1F12B2FA00503027 /* TacoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoAppTests.swift; sourceTree = "<group>"; };
 		11F2969D1F12B2FA00503027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F296AC1F12B77D00503027 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,12 @@
 		11F296851F12B2F900503027 /* TacoApp */ = {
 			isa = PBXGroup;
 			children = (
-				11F296861F12B2F900503027 /* AppDelegate.swift */,
-				11F296881F12B2F900503027 /* ViewController.swift */,
-				11F2968A1F12B2F900503027 /* Main.storyboard */,
-				11F2968D1F12B2F900503027 /* Assets.xcassets */,
-				11F2968F1F12B2F900503027 /* LaunchScreen.storyboard */,
-				11F296921F12B2F900503027 /* Info.plist */,
+				11F296AB1F12B60600503027 /* Extensions */,
+				11F296AA1F12B60000503027 /* Protocols */,
+				11F296A71F12B5E800503027 /* Model */,
+				11F296A81F12B5F000503027 /* View */,
+				11F296A61F12B5DF00503027 /* Controller */,
+				11F296A91F12B5F500503027 /* Resources */,
 			);
 			path = TacoApp;
 			sourceTree = "<group>";
@@ -94,6 +94,54 @@
 				11F2969D1F12B2FA00503027 /* Info.plist */,
 			);
 			path = TacoAppTests;
+			sourceTree = "<group>";
+		};
+		11F296A61F12B5DF00503027 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F296861F12B2F900503027 /* AppDelegate.swift */,
+				11F296AC1F12B77D00503027 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11F296A71F12B5E800503027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		11F296A81F12B5F000503027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F2968A1F12B2F900503027 /* Main.storyboard */,
+				11F2968F1F12B2F900503027 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		11F296A91F12B5F500503027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11F2968D1F12B2F900503027 /* Assets.xcassets */,
+				11F296921F12B2F900503027 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		11F296AA1F12B60000503027 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		11F296AB1F12B60600503027 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F296891F12B2F900503027 /* ViewController.swift in Sources */,
 				11F296871F12B2F900503027 /* AppDelegate.swift in Sources */,
+				11F296AD1F12B77D00503027 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
