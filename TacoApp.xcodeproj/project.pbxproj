@@ -19,6 +19,11 @@
 		11F296B51F12CEAC00503027 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296B41F12CEAC00503027 /* DataService.swift */; };
 		11F296B81F12DE2000503027 /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296B61F12DE2000503027 /* TacoCell.swift */; };
 		11F296B91F12DE2000503027 /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F296B71F12DE2000503027 /* TacoCell.xib */; };
+		11F296BB1F12E38100503027 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296BA1F12E38100503027 /* ReusableView.swift */; };
+		11F296BD1F12E42000503027 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296BC1F12E42000503027 /* NibLoadableView.swift */; };
+		11F296BF1F12E48600503027 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296BE1F12E48600503027 /* UICollectionView+Ext.swift */; };
+		11F296C11F12E92C00503027 /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296C01F12E92C00503027 /* MutableCollection+Ext.swift */; };
+		11F296C31F12EBEB00503027 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F296C21F12EBEB00503027 /* Shakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		11F296B41F12CEAC00503027 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		11F296B61F12DE2000503027 /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
 		11F296B71F12DE2000503027 /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		11F296BA1F12E38100503027 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		11F296BC1F12E42000503027 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		11F296BE1F12E48600503027 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		11F296C01F12E92C00503027 /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
+		11F296C21F12EBEB00503027 /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				11F296AE1F12C05D00503027 /* DropShadow.swift */,
+				11F296BA1F12E38100503027 /* ReusableView.swift */,
+				11F296BC1F12E42000503027 /* NibLoadableView.swift */,
+				11F296C21F12EBEB00503027 /* Shakeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -158,6 +171,8 @@
 		11F296AB1F12B60600503027 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				11F296BE1F12E48600503027 /* UICollectionView+Ext.swift */,
+				11F296C01F12E92C00503027 /* MutableCollection+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -269,11 +284,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F296B81F12DE2000503027 /* TacoCell.swift in Sources */,
+				11F296C11F12E92C00503027 /* MutableCollection+Ext.swift in Sources */,
 				11F296871F12B2F900503027 /* AppDelegate.swift in Sources */,
 				11F296AF1F12C05D00503027 /* DropShadow.swift in Sources */,
+				11F296BD1F12E42000503027 /* NibLoadableView.swift in Sources */,
+				11F296BF1F12E48600503027 /* UICollectionView+Ext.swift in Sources */,
+				11F296BB1F12E38100503027 /* ReusableView.swift in Sources */,
 				11F296AD1F12B77D00503027 /* MainVC.swift in Sources */,
 				11F296B51F12CEAC00503027 /* DataService.swift in Sources */,
 				11F296B31F12C66D00503027 /* Taco.swift in Sources */,
+				11F296C31F12EBEB00503027 /* Shakeable.swift in Sources */,
 				11F296B11F12C45500503027 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
