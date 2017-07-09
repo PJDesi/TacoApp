@@ -10,10 +10,14 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var headerView: HeaderView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        headerView.addDropShadow()
+        
     }
 
     override func didReceiveMemoryWarning() {
